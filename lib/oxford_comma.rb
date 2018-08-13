@@ -3,6 +3,8 @@ def oxford_comma(array)
     array[array.length-1]
   elsif array.length == 2
     array.join(" and ")
+  elsif array.length == 3
+    array
   else
     last_word = "and" << array[array.length -1]
     puts last_word
